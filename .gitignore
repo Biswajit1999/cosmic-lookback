@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+*.fits
+*.fits.gz
+*.parquet
+data/raw/
+data/cache/
+.DS_Store
+Thumbs.db

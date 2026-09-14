@@ -1,0 +1,54 @@
+{
+  "format": "cosmic-lookback-survey-registry/v1",
+  "generated": "2026-09-14",
+  "author": "Biswajit Jana",
+  "statusVocabulary": {
+    "integrated": "Object-level records are present and validated for this release.",
+    "linked": "A separate provenance-preserving project or release is linked.",
+    "image-reference": "Real public imagery is displayed; object-level records are not integrated.",
+    "registered": "A primary access route and planned scientific role exist; the adapter is not complete."
+  },
+  "surveys": [
+    {
+      "id": "ceers-dr1",
+      "status": "integrated",
+      "catalogRows": 87345,
+      "analysisRows": 76979,
+      "browserRows": 12000,
+      "source": "https://ceers.github.io/releases.html"
+    },
+    {
+      "id": "nasadiya-desi-dr1-lss",
+      "status": "linked",
+      "catalogRows": 6093818,
+      "browserRows": 125000,
+      "source": "https://github.com/Biswajit1999/NASADIYA-LIGHTCONE",
+      "officialRelease": "https://data.desi.lbl.gov/doc/releases/dr1/"
+    },
+    {
+      "id": "jades",
+      "status": "image-reference",
+      "reportedScale": ">45000 sources in referenced public catalogue",
+      "source": "https://archive.stsci.edu/hlsp/jades"
+    },
+    {
+      "id": "cosmos2025-dr1",
+      "status": "registered",
+      "catalogRows": 784016,
+      "cleanRows": 694341,
+      "source": "https://cosmos2025.iap.fr/catalog.html"
+    },
+    {
+      "id": "legacy-surveys-dr10",
+      "status": "image-reference",
+      "reportedScale": "approximately 2.8 billion unique sources",
+      "source": "https://www.legacysurvey.org/dr10/description/"
+    },
+    {
+      "id": "hsc-pdr3",
+      "status": "registered",
+      "reportedScale": "more than 600 square degrees at nominal multiband depth",
+      "source": "https://hsc-release.mtk.nao.ac.jp/doc/index.php/available-data__pdr3/"
+    }
+  ]
+}

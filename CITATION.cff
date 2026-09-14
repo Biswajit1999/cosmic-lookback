@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use COSMIC LOOKBACK, cite this software and the survey products used by your analysis."
+title: "COSMIC LOOKBACK: Multi-survey morphology recoverability laboratory"
+type: software
+authors:
+  - family-names: Jana
+    given-names: Biswajit
+repository-code: "https://github.com/Biswajit1999/cosmic-lookback"
+url: "https://github.com/Biswajit1999/cosmic-lookback"
+version: 0.2.0
+date-released: 2026-09-14
+license: MIT
+keywords:
+  - galaxy morphology
+  - observational astronomy
+  - artificial redshifting
+  - JWST
+  - DESI
+  - reproducible science
