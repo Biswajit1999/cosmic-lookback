@@ -1,5 +1,7 @@
 # COSMIC LOOKBACK
 
+[Open the live scientific observatory](https://biswajit1999.github.io/cosmic-lookback/)
+
 > A multi-survey galaxy-morphology laboratory that measures whether a scientific conclusion survives a change in redshift, wavelength, depth, pixel scale or telescope resolution.
 
 **Author and principal investigator: [Biswajit Jana](https://github.com/Biswajit1999)**

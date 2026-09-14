@@ -245,7 +245,7 @@ button { color: inherit; }
 .landmark-rail { display: grid; grid-template-columns: repeat(6, 1fr); border: 1px solid var(--line); border-bottom: 0; }
 .landmark-rail button { min-width: 0; border: 0; border-right: 1px solid var(--line); background: #060b0f; padding: 0 0 15px; text-align: left; cursor: pointer; overflow: hidden; }
 .landmark-rail button:last-child { border-right: 0; }
-.landmark-thumb { display: block; height: 105px; margin-bottom: 13px; background-image: url('/ceers-little-red-dots-nircam.png'); background-size: 300% 200%; background-position: var(--sprite-x) var(--sprite-y); filter: saturate(.9) brightness(.72); transition: filter .2s, transform .25s; }
+.landmark-thumb { display: block; height: 105px; margin-bottom: 13px; background-image: var(--landmark-sprite); background-size: 300% 200%; background-position: var(--sprite-x) var(--sprite-y); filter: saturate(.9) brightness(.72); transition: filter .2s, transform .25s; }
 .landmark-rail button b, .landmark-rail button small { display: block; padding: 0 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .landmark-rail button b { color: #9dabb0; font: 500 10px/1.2 "IBM Plex Mono", monospace; }.landmark-rail button small { margin-top: 7px; color: #596970; font: 400 9px/1 "IBM Plex Mono", monospace; }
 .landmark-rail button:hover .landmark-thumb, .landmark-rail button.is-active .landmark-thumb { filter: saturate(1.15) brightness(1.1); transform: scale(1.025); }
@@ -255,7 +255,7 @@ button { color: inherit; }
 .transfer-sequence > article { min-width: 0; border: 1px solid #24343a; background: #070d11; }
 .transfer-sequence article > header { min-height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 14px; border-bottom: 1px solid #24343a; color: #809096; font: 500 9px/1 "IBM Plex Mono", monospace; }
 .landmark-image { position: relative; aspect-ratio: 1.28; overflow: hidden; background: #000; }
-.landmark-image__pixels { position: absolute; inset: 0; background-image: url('/ceers-little-red-dots-nircam.png'); background-size: 300% 200%; background-position: var(--sprite-x) var(--sprite-y); transform: scale(1.02); }
+.landmark-image__pixels { position: absolute; inset: 0; background-image: var(--landmark-sprite); background-size: 300% 200%; background-position: var(--sprite-x) var(--sprite-y); transform: scale(1.02); }
 .landmark-image--matched .landmark-image__pixels { filter: saturate(.86) blur(.55px); transform: scale(.96); }
 .simulated-card .landmark-image--simulated .landmark-image__pixels { filter: saturate(.72) blur(var(--transfer-blur)) brightness(var(--transfer-dim)); transform: scale(.82); }
 .focus-ring { position: absolute; left: 50%; top: 52%; width: 42%; aspect-ratio: 1; transform: translate(-50%, -50%); border: 1px solid rgba(126, 231, 255, .45); border-radius: 50%; box-shadow: 0 0 0 9px rgba(126, 231, 255, .025); }
