@@ -1,0 +1,23 @@
+name: Validate scientific interface
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Parse registry and object schema
+        run: node -e "JSON.parse(require('fs').readFileSync('data/registry/surveys.json')); JSON.parse(require('fs').readFileSync('schemas/object-record.schema.json'));"

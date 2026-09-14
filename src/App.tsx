@@ -173,7 +173,7 @@ function App() {
   useEffect(() => { fetch("/data/ceers-dr1-sample.json").then((response) => { if (!response.ok) throw new Error(`HTTP ${response.status}`); return response.json(); }).then((payload: Catalog) => { setCatalog(payload); const initial = payload.rows.filter((source) => source.q && source.q > 8).sort((a, b) => Math.abs(a.z - 6.4) - Math.abs(b.z - 6.4))[0] ?? payload.rows[0]; setSelected(initial); }).catch(() => setLoadError("The catalog subset could not be loaded.")); }, []);
   useEffect(() => {
     if (!catalog || !window.location.hash) return;
-    const alignHash = () => document.querySelector(window.location.hash)?.scrollIntoView({ block: "start" });
+    const alignHash = () => document.querySelector(window.location.hash)?.scrollIntoView({ block: "start", behavior: "auto" });
     window.requestAnimationFrame(() => window.requestAnimationFrame(alignHash));
     const timer = window.setTimeout(alignHash, 350);
     return () => window.clearTimeout(timer);
