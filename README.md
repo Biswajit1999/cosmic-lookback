@@ -33,6 +33,8 @@ The core question is:
 
 The current transfer control is an interface prototype. Its support percentage is labelled simulated and must not be used as a scientific probability. A later release will replace it with recovery surfaces calibrated through injection, repeat-observation and held-out field tests.
 
+The [display-image transfer validation](docs/DISPLAY_IMAGE_VALIDATION.md) now provides a reproducible `scikit-image` audit of the five tracked public RGB composites, including resolution-loss and synthetic-noise sweeps. It is intentionally a pixel-structure check, not a morphology measurement: the rendered web images lack calibrated flux, PSFs, masks, weights and a common angular scale.
+
 ## Run locally
 
 ```bash
