@@ -1,0 +1,23 @@
+name: Image-analysis validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-analysis.txt
+      - run: python -m pip install -r requirements-analysis.txt
+      # Existing acquisition scripts predate repository-wide Ruff adoption;
+      # this workflow gates the new image-analysis library and tests.
+      - run: ruff check research/image_transfer.py tests/test_image_transfer.py
+      - run: python -m pytest -q
+      - run: python scripts/validate-image-transfer.py

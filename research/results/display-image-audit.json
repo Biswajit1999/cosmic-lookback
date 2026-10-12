@@ -1,0 +1,67 @@
+{
+  "data_kind": "real public mission display composites",
+  "derived_kind": "synthetic resolution/noise transformations",
+  "sources": [
+    {
+      "file": "ceers-full-field.png",
+      "sha256": "bebd8ef019e1c5037e3f717492cdb0645a9f2a2e832c1a7f26b71a4287e8ef44",
+      "analysis_height_px": 170,
+      "analysis_width_px": 512,
+      "luminance_p01": 0.0,
+      "luminance_p99": 0.17780780959807688,
+      "shannon_entropy_bits": 3.007175379588021,
+      "sobel_rms": 0.028994485312308537,
+      "near_black_fraction": 0.47846966911764705,
+      "near_white_fraction": 0.0
+    },
+    {
+      "file": "ceers-little-red-dots-nircam.png",
+      "sha256": "405732140d328247a36cc290656192e06bc6f585ea48a0bf8d3cb7f1db573e21",
+      "analysis_height_px": 341,
+      "analysis_width_px": 512,
+      "luminance_p01": 0.020156649043847917,
+      "luminance_p99": 0.7631640736741012,
+      "shannon_entropy_bits": 4.318217348620601,
+      "sobel_rms": 0.12125065884881138,
+      "near_black_fraction": 0.0004868493401759531,
+      "near_white_fraction": 6.300403225806451e-05
+    },
+    {
+      "file": "hubble-ultra-deep-field.jpg",
+      "sha256": "0fdf7cfaaf71d2ebb332fd11d8eaae45b844c18572ad12bb06eb5848e9c29416",
+      "analysis_height_px": 512,
+      "analysis_width_px": 512,
+      "luminance_p01": 0.021722042525517057,
+      "luminance_p99": 0.46693399079751224,
+      "shannon_entropy_bits": 4.162603197668837,
+      "sobel_rms": 0.05781936426433204,
+      "near_black_fraction": 3.814697265625e-06,
+      "near_white_fraction": 4.1961669921875e-05
+    },
+    {
+      "file": "jades-goods-s.png",
+      "sha256": "8da373e54849419a987a1fddf669f44483060186ff7a34a2152565b06aa172d9",
+      "analysis_height_px": 359,
+      "analysis_width_px": 512,
+      "luminance_p01": 0.05617617330012602,
+      "luminance_p99": 0.2879536547400149,
+      "shannon_entropy_bits": 2.669747365788451,
+      "sobel_rms": 0.039152740136077474,
+      "near_black_fraction": 0.0,
+      "near_white_fraction": 0.0
+    },
+    {
+      "file": "legacy-survey-dr10.jpg",
+      "sha256": "676d5bb43628c4a4a1d36788ed5f2a02df1455657f29e8009852c3c80331f3d7",
+      "analysis_height_px": 512,
+      "analysis_width_px": 512,
+      "luminance_p01": 0.0945232451859938,
+      "luminance_p99": 0.8358708539285628,
+      "shannon_entropy_bits": 5.262091932057134,
+      "sobel_rms": 0.03787614602366718,
+      "near_black_fraction": 0.0,
+      "near_white_fraction": 0.003406524658203125
+    }
+  ],
+  "limitations": "Rendered RGB display products lack calibrated flux, PSF, weight maps, masks, and a common angular pixel scale. Results are pixel-structure diagnostics and cannot support galaxy morphology or survey comparisons."
+}
