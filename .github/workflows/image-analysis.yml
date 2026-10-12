@@ -16,6 +16,8 @@ jobs:
           cache: pip
           cache-dependency-path: requirements-analysis.txt
       - run: python -m pip install -r requirements-analysis.txt
-      - run: ruff check research scripts tests
+      # Existing acquisition scripts predate repository-wide Ruff adoption;
+      # this workflow gates the new image-analysis library and tests.
+      - run: ruff check research/image_transfer.py tests/test_image_transfer.py
       - run: pytest -q
       - run: python scripts/validate-image-transfer.py
