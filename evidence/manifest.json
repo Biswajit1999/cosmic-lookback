@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "project": "COSMIC LOOKBACK",
+  "repository": "https://github.com/Biswajit1999/cosmic-lookback",
+  "files": [
+    {
+      "label": "Surveys",
+      "path": "data/registry/surveys.json",
+      "role": "Data and provenance",
+      "bytes": 1852,
+      "sha256": "0b150a0e7630989c5ab36d6f1185af363850e21664ef798b47e83474780f1936",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "format",
+        "generated",
+        "author",
+        "statusVocabulary",
+        "surveys"
+      ],
+      "arrays": {
+        "surveys": 6
+      }
+    },
+    {
+      "label": "Ceers dr1 sample",
+      "path": "public/data/ceers-dr1-sample.json",
+      "role": "Data and provenance",
+      "bytes": 1563639,
+      "sha256": "4d8e084e537267c1ae28f5fe9a6bb830c557bd39b1e8e8a97748b1dfc58ffb0a",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "meta",
+        "redshiftHistogram",
+        "redshiftMassDensity",
+        "rows"
+      ],
+      "arrays": {
+        "rows": 12000
+      }
+    },
+    {
+      "label": "Display image audit",
+      "path": "research/results/display-image-audit.json",
+      "role": "Tables and numerical results",
+      "bytes": 2695,
+      "sha256": "a7ba366b44b4d32f7489acaf6a30168ee5350421f983fa970da44278a40dca03",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "data_kind",
+        "derived_kind",
+        "sources",
+        "limitations"
+      ],
+      "arrays": {
+        "sources": 5
+      }
+    },
+    {
+      "label": "Display image transfer",
+      "path": "research/results/display-image-transfer.csv",
+      "role": "Tables and numerical results",
+      "bytes": 4033,
+      "sha256": "9440c514f3882ea1ad5139f716099b5347f1dee4901085696c4c3b073cde159d",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 40,
+      "columns": 6,
+      "headers": [
+        "file",
+        "degradation",
+        "level",
+        "ssim",
+        "gradient_correlation",
+        "entropy_retained_fraction"
+      ],
+      "preview": [
+        [
+          "ceers-full-field.png",
+          "resolution",
+          "2.0",
+          "0.8861368831388242",
+          "0.8079572576115414",
+          "1.065621943168813"
+        ],
+        [
+          "ceers-full-field.png",
+          "resolution",
+          "4.0",
+          "0.7991917649484104",
+          "0.470780997992478",
+          "1.1461716083221953"
+        ],
+        [
+          "ceers-full-field.png",
+          "resolution",
+          "8.0",
+          "0.6979340361030291",
+          "0.20412318721286618",
+          "1.2882260148182623"
+        ],
+        [
+          "ceers-full-field.png",
+          "resolution",
+          "16.0",
+          "0.5773611926694",
+          "0.0642316246601226",
+          "1.3958396308933134"
+        ]
+      ]
+    },
+    {
+      "label": "Display image transfer",
+      "path": "research/results/display-image-transfer.png",
+      "role": "Figures",
+      "bytes": 214594,
+      "sha256": "04baaa30ad949ec6dabd9fc8635f09893fae6b0c2355e903253be1417041e740",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    }
+  ]
+}

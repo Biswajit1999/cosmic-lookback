@@ -1,0 +1,31 @@
+{
+  "project": "COSMIC LOOKBACK",
+  "repository": "https://github.com/Biswajit1999/cosmic-lookback",
+  "files": [
+    {
+      "label": "Surveys",
+      "path": "data/registry/surveys.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Ceers dr1 sample",
+      "path": "public/data/ceers-dr1-sample.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Display image audit",
+      "path": "research/results/display-image-audit.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Display image transfer",
+      "path": "research/results/display-image-transfer.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Display image transfer",
+      "path": "research/results/display-image-transfer.png",
+      "role": "Figures"
+    }
+  ]
+}
