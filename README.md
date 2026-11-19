@@ -8,6 +8,12 @@
 
 COSMIC LOOKBACK combines a real CEERS DR1 catalogue explorer, population diagnostics, public telescope imagery and an observation-transfer workbench. The project’s proposed scientific contribution is a reproducible **morphology recoverability benchmark** with per-object provenance, held-out survey validation, uncertainty calibration and explicit abstention outside validated support.
 
+## Research evidence and downloads
+
+[Open the evidence browser file](evidence.html) for 5 selected files, including [`display-image-audit.json`](research/results/display-image-audit.json). Each file has a download link and SHA-256 digest. Serve this checkout with `python -m http.server` to view the static browser.
+
+Rebuild the inventory and browser with `python scripts/evidence_catalog.py` and `python scripts/render_evidence_page.py`.
+
 ## Current release
 
 | Layer | State | Scale |
