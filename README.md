@@ -10,6 +10,13 @@ COSMIC LOOKBACK combines a real CEERS DR1 catalogue explorer, population diagnos
 
 ## Research evidence and downloads
 
+
+- [Download the machine-readable table profiles](evidence/table-profiles.json) for 1 archived tables. Open `table-evidence.html` from the checkout for the coverage chart.
+- Start with [Display image audit](research/results/display-image-audit.json), [Display image transfer](research/results/display-image-transfer.csv), [Surveys](data/registry/surveys.json).
+- [View Display image transfer](research/results/display-image-transfer.png).
+
+To rebuild the table profiles after rebuilding the evidence inventory, run `python scripts/profile_evidence_tables.py` followed by `python scripts/render_table_profiles.py`.
+
 [Open the evidence browser file](evidence.html) for 5 selected files, including [`display-image-audit.json`](research/results/display-image-audit.json). Each file has a download link and SHA-256 digest. Serve this checkout with `python -m http.server` to view the static browser.
 
 Rebuild the inventory and browser with `python scripts/evidence_catalog.py` and `python scripts/render_evidence_page.py`.
