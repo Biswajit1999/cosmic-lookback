@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "project": "COSMIC LOOKBACK",
+  "tables": [
+    {
+      "path": "research/results/display-image-transfer.csv",
+      "label": "Display image transfer",
+      "role": "Tables and numerical results",
+      "rows": 40,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "file",
+          "blank": 0,
+          "text": 40,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "degradation",
+          "blank": 0,
+          "text": 40,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "level",
+          "blank": 0,
+          "text": 0,
+          "finite": 40,
+          "nonfinite": 0,
+          "minimum": 0.005,
+          "maximum": 16.0
+        },
+        {
+          "name": "ssim",
+          "blank": 0,
+          "text": 0,
+          "finite": 40,
+          "nonfinite": 0,
+          "minimum": 0.44717749025974085,
+          "maximum": 0.9846741752805674
+        },
+        {
+          "name": "gradient_correlation",
+          "blank": 0,
+          "text": 0,
+          "finite": 40,
+          "nonfinite": 0,
+          "minimum": 0.0642316246601226,
+          "maximum": 0.9997218631363998
+        },
+        {
+          "name": "entropy_retained_fraction",
+          "blank": 0,
+          "text": 0,
+          "finite": 40,
+          "nonfinite": 0,
+          "minimum": 0.8287980046840961,
+          "maximum": 2.0289199193252445
+        }
+      ]
+    }
+  ],
+  "excluded": []
+}
